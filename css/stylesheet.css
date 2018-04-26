@@ -1,0 +1,192 @@
+body {
+  background-color: #2d3c49;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: white;
+  max-width: 1000px;
+  margin: auto;
+  padding: 5%;
+}
+
+
+/*---------Header Items---------*/
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 100%;
+  margin: 0 0 1em 0;
+}
+
+#header-minor-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  width: 100%;
+}
+
+#logo {
+  width: 10%;
+  min-width: 100px;
+  padding-bottom: 20px;
+}
+
+#header-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  width: 90%;
+}
+
+.head-name {
+  font-family: "Quicksand", sans-serif;
+  font-size: 4.5em;
+  font-weight: 300;
+  font-variant: small-caps;
+  color: #2d3c49;
+
+  margin-bottom: -30px; 
+}
+
+.head-title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-variant: small-caps;
+  color: #2d3c49;
+}
+
+#header-border {
+  align-self: center;
+
+  background-color: #7d97ad;
+  width: 100%;
+  height: 3px;
+}
+
+
+/*---------Main Image------------*/
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+}
+
+#main-image {
+  align-self: center;
+
+  width: 100%;
+  height: auto;
+}
+
+#featured {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  color: #7d97ad;
+
+  margin-left: 10px; 
+  margin-bottom: -3%;
+}
+
+
+/*---------Project Items---------*/
+
+.footer-container {
+  display: flex; 
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+  margin: 2em 0;
+}
+
+.project-container {
+  flex: 0 0 22.5%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  border-radius: 15px; 
+  background-color: #ea8c0d;
+  height: 200px;
+}
+
+.project-name {
+  flex: 1;
+  
+  text-align: center;
+  line-height: 0.8;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-variant: small-caps;
+  color: white;
+  
+  padding: 0 10px 0 10px;
+  margin-top: -30px;
+}
+
+.project-des {
+  text-align: center;
+  
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  color: white;
+
+  margin-top: -20px;
+}
+
+
+/*---------Media Queries---------*/
+
+@media screen and (max-width: 600px) {
+  .head-name {
+    font-size: 3.5em;
+  }
+  #logo {
+    min-width: 75px;
+  }
+  .project-container {
+    flex: 0 0 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .head-name {
+    font-size: 2.5em;
+  }
+  .head-title {
+    font-weight: 300;
+  }
+  #featured {
+    align-self: center;
+    font-size: 1.5em;
+    margin-left: 0;
+  }
+  .project-container {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  .project-name {
+    font-size: 2em;
+  }
+}
